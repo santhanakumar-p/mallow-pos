@@ -21,5 +21,5 @@ Route::controller(OrderController::class)->prefix('orders')->name('orders.')->gr
     Route::get('/', 'index')->name('index');
     Route::get('create', 'create')->name('create');
     Route::post('/', 'store')->name('store');
-    Route::get('{order}/details', 'orderDetails')->name('details');
+    Route::get('{id}/details', 'orderDetails')->name('details');
 });
